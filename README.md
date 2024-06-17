@@ -34,29 +34,39 @@ $ npm install
 
 ## Running the app
 
+# add .env /testApp
+# for example:
+# DB_HOST='localhost'
+# DB_PORT=5555
+# DB_USERNAME='postgres'
+# DB_PASSWORD='1'
+# DB_NAME='usersdb'
+
 ```bash
+
 # development
 $ npm run start
 
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
 ```
+## Test in Insomnia
 
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
+[//]: # (
+/ Task 1
+1.registration : POST http://localhost:3001/user JSON {
+	"name": "",
+	"email": ""
+}
+2.findall : GET http://localhost:3001/user No Body
+3.updateUser: PATCH http://localhost:3001/user/id JSON {
+	"name": "",
+	"email": ""
+}
+4.countUpdate: GET http://localhost:3001/history/id?page=1&limit=10
+/
+/Task 2
+5.createUsers: POST http://localhost:3001/task2/many JSON {"count": 1000000}
+6.solveProblem : GET http://localhost:3001/task2/update-problems No Body
+)
 
 ## Support
 
